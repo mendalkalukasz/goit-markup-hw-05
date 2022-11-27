@@ -113,12 +113,28 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* «C4» W głównej nawigacji, używając pseudoelementu ::after, podkreślono link do bieżącej strony (na której obecnie jest użytkownik). */
+.nav-link:hover:after,
+.active::after {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--blue);
+  position: relative;
+}
+
+
 .icons-header {
   fill: var(--grey);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: fill;
+  transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -437,7 +453,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--background);
+  background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white);
   transition-property: fill, background-color;
   transition-duration: 250ms;
