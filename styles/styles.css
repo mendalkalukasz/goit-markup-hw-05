@@ -117,6 +117,7 @@ body {
 /* «C4» W głównej nawigacji, używając pseudoelementu ::after, podkreślono link do bieżącej strony (na której obecnie jest użytkownik). */
 .nav-link:hover:after,
 .active::after {
+  content: '';
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -125,9 +126,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--blue);
-  position: relative;
+  position: absolute;
 }
-
 
 .icons-header {
   fill: var(--grey);
