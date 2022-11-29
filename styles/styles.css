@@ -123,6 +123,10 @@ body {
   width: 100%;
   top: 45px;
   left: 0;
+  position: absolute;
+}
+
+.active {
   position: relative;
 }
 
