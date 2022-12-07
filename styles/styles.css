@@ -115,7 +115,6 @@ body {
 }
 
 /* «C4» W głównej nawigacji, używając pseudoelementu ::after, podkreślono link do bieżącej strony (na której obecnie jest użytkownik). */
-.nav-link:hover:after,
 .active::after {
   content: '';
   border-bottom: 2px solid #2196f3;
